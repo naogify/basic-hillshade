@@ -20,7 +20,7 @@ sources:
   dem:
     type: raster-dem
     tiles:
-    - https://tileserver.geolonia.com/gsi-dem/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY
+    - https://tileserver.geolonia.com/gsi-hillshademap/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY
 sprite: https://geoloniamaps.github.io/basic/basic
 glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
 layers:
