@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deploy Preview - Geolonia Map</title>
+  <style>
+    html,
+    body,
+    #map {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div
+    id="map"
+    data-zoom="6.78"
+    data-lat="35.991"
+    data-lng="137.314"
+    data-hash="on"
+    data-marker="off"
+  ></div>
+  <script src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
+  <script>
+    const map = new geolonia.Map({
+      container: "#map",
+      style: "./style.json",
+    });
+  </script>
+</body>
+
+</html>
